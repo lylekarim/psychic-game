@@ -11,43 +11,41 @@
     <script src="assets/javascript/game.js"></script>
     <!-- 9. When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).      -->
 </head>
-<body>
-     
- --don't let computer keep piccking until number of guesses is over
 
- --figure out an annoucement for winning and a game reset
+<body>
 
 
     <main>
         <div class="container">
-                <h1>Psychic game</h1>
-                <div id="game"></div>
+        
+            <div class="jumbotron">
+                    <span class="display-4">Psychic game</span><span class="h2">...Guess what letter I'm thinking of (type it)</span></div>
             <section>
-
-                <div id="html"></div>
-                Guess what letter I'm thinking of
-                <div>
+                 <div class="alert alert-info" role="alert" id="game"></div>
+               </section> 
+              <section>
+                <div class="display-4">
                     Wins:
-                    <span id="wins"></span>
+                    <span class="display-3" id="wins"></span>
+                </div class="display-4">
+                <div class="display-4"> Losses:
+                    <span class="display-3" id="losses"></span>
                 </div>
-                <div> Losses:
-                    <span id="losses"></span>
-                </div>
-                <div>
+                <div class="display-4">
                     Guesses Left:
-                    <span id="guesses"></span>
+                    <span class="display-3" id="guesses"></span>
                 </div>
-                <div>
+                <div class="display-4">
                     Your Guesses so far:
-                    <span id="listUserChoices"></span>
-                </div>
+                 
+                        <span class="display-3"id="listUserChoices"></span>
+                  </div>
             </section>
 
 
         </div>
     </main>
-    <p></p>
-
-    </body>
+  
+</body>
 
 </html>
